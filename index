@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Consulta Dermatológica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #fc447c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fc447c;
+        }
+        .logo {
+            max-width: 250px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/santacruz-logo.png" alt="Logo da Santa Cruz" class="logo">
+        <h1>Marcar Consulta Dermatológica</h1>
+        <form action="#" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data">Data da Consulta:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Hora da Consulta:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="motivo">Motivo da Consulta:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="consulta">Consulta de Rotina</option>
+                <option value="acne">Tratamento de Acne</option>
+                <option value="psoriase">Psoríase</option>
+                <option value="eczema">Eczema</option>
+                <option value="outro">Outros</option>
+            </select>
+
+            <button type="submit">MARCAR CONSULTA</button>
+        </form>
+    </div>
+</body>
+</html>
